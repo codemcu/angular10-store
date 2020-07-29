@@ -3,8 +3,45 @@
     <app-header></app-header>
   </header>
   <div class="container">
-    <main>
-      listado
+    <div class="filters">
+      <ul>
+        <li>
+          <img src="./../assets/img/casual-removebg-preview.png" />
+          <span class="filter-span"></span>
+        </li>
+        <li>
+          <img src="./../assets/img/football-removebg-preview.png" />
+          <span class="filter-span"></span>
+        </li>
+        <li>
+          <img src="./../assets/img/running-removebg-preview.png" />
+          <span class="filter-span"></span>
+        </li>
+      </ul>
+    </div>
+    <main class="sneakers-list">
+      <div class="sneakers-list-th">
+        <div></div>
+        <div class="sneakers-list-name">Name</div>
+        <div>Sizes</div>
+        <div>Price</div>
+      </div>
+      <div class="sneakers-list-td" *ngFor="let product of products">
+        <div>
+          <input type="checkbox" />
+        </div>
+        <div class="sneakers-list-name">{{product.name}}</div>
+        <div>
+          <select>
+            <option *ngFor="let size of product.sizes">{{size}}</option>
+          </select>
+        </div>
+        <div>{{product.price}}€</div>
+      </div>
+      <div class="sneakers-list-total">
+        <div class="sneakers-list-total-text">Total amount</div>
+        <div class="sneakers-list-total-number">23423€</div>
+      </div>
     </main>
   </div>
 </div>

@@ -22,12 +22,64 @@ header {
   margin-right: auto;
   width: 100%;
   padding: 0 15px;
+
+  .filters {
+    ul {
+      display: flex;
+      justify-content: flex-end;
+    }
+    ul li {
+      list-style-type: none;
+
+      img {
+        width: 100px;
+        transform: rotateY(-180deg);
+      }
+    }
+  }
 }
 
 .grid {
   display: grid;
   grid-template-rows: 3rem 1fr;
   height: 100%;
+}
+
+.sneakers-list {
+  display: grid;
+  grid-template-rows: 2rem 1fr;
+  text-align: center;
+}
+
+.sneakers-list-name {
+  text-align: left;
+}
+
+.sneakers-list-th {
+  background-color: #e2e2e2;
+}
+
+.sneakers-list-td {
+  padding: 15px 0;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.sneakers-list-th,
+.sneakers-list-td {
+  display: grid;
+  grid-template-columns: 2rem 1fr 8rem 8rem;
+  align-items: center;
+}
+
+.sneakers-list-total{
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 40px;
+  margin-top: 20px;
+
+  .sneakers-list-total-text{
+    margin-right: 15px;
+  }
 }
 
 @media (min-width: 576px) {
