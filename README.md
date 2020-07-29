@@ -1,5 +1,14 @@
 # AngularStore
 
+**Description:**
+
+Sneakers filter store with **Angular 10**
+
+![Captura de pantalla 2020-07-24 a las 9 33 52](https://user-images.githubusercontent.com/6061416/88370718-e3439d80-cd92-11ea-8c57-f6082d0cbad9.png)
+
+
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.4.
 
 ## Development server
@@ -13,15 +22,3 @@ Run `ng generate component component-name` to generate a new component. You can 
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
